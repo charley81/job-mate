@@ -15,11 +15,11 @@ export default function Home() {
           <h1 className="text-4xl md:text-7xl font-bold text-slate-950">
             My job hunt
           </h1>
-          <p className="leading-loose max-w-md mt-4 text-slate-500">
+          <p className="leading-relaxed max-w-md py-8 text-slate-500">
             jobMate simplifies the job search process by enabling users to log
             and organize job applications effortlessly.
           </p>
-          <Button asChild className="mt-4 rounded-full">
+          <Button asChild className="rounded-full">
             <Link href="/add-job">Get started</Link>
           </Button>
         </div>
