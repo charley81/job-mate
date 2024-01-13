@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import HeroImg from '../assets/hero.svg'
 import { Button } from '@/components/ui/button'
+import Logo from '@/components/logo'
 import Link from 'next/link'
 
 export default function Home() {
   return (
     <main>
       <header className="max-w-6xl mx-auto px-4 sm:px-8 py-6">
-        <h3 className="text-2xl font-bold text-slate-950">jobMate</h3>
+        <Logo />
       </header>
       <section className="max-w-6xl mx-auto px-4 sm:px-8 h-screen -mt-20 grid lg:grid-cols-[1fr,400px] items-center">
         {/* content */}
