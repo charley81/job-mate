@@ -4,6 +4,7 @@ import links from '@/utils/links'
 import Logo from './logo'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { Button } from './ui/button'
 
 export default function Sidebar() {
   const pathname = usePathname()
@@ -16,18 +17,15 @@ export default function Sidebar() {
       {/* links */}
       <div className="flex flex-col mt-20 gap-y-8">
         {links.map(link => (
-          <Link
+          <Button
+            asChild
             key={link.href}
-            href={link.href}
-            className={`flex items-center  gap-x-2 ${
-              pathname !== link.href
-                ? 'text-slate-600'
-                : 'text-slate-950 font-bold'
-            }`}
+            variant={pathname === link.href ? 'outline ' : 'link'}
           >
-            <span>{link.icon}</span>
-            <span>{link.label}</span>
-          </Link>
+            <Link href={link.href}>
+              {link.icon} <span>{link.label}</span>
+            </Link>
+          </Button>
         ))}
       </div>
     </aside>
