@@ -9,7 +9,7 @@ import {
 import { Input } from '@/components/ui/input'
 import { CustomInputProps } from '@/utils/types'
 
-export function CustomInput({ name, control }: CustomInputProps) {
+export default function CustomInput({ name, control }: CustomInputProps) {
   return (
     <FormField
       control={control}

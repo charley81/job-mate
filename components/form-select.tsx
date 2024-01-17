@@ -16,7 +16,7 @@ import {
   FormMessage
 } from './ui/form'
 
-export function CustomSelect({
+export default function CustomSelect({
   name,
   control,
   items,
